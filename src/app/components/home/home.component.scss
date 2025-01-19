@@ -1,0 +1,132 @@
+.card {
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f05a28;
+}
+.card-subtitle {
+  font-size: 28px;
+  font-weight: 500;
+  color: #562c2c;
+}
+.card-text {
+  font-size: 18px;
+  color: rgba(86, 44, 44, 0.8);
+}
+.btn-custom {
+  color: #562c2c;
+  font-weight: 500;
+  width: 249px;
+  border: 1px solid rgba(86, 44, 44, 0.3);
+  border-radius: 33px;
+  padding: 0.5rem 1.5rem;
+}
+.btn-custom:hover {
+  background-color: #f05a28;
+  color: #fff;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.section-title h1 {
+  color: #f05a28;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-title h2 {
+  font-size: 1rem;
+  color: #d9d9d9;
+}
+
+.block-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px;
+  font-weight: 600;
+  color: #f2542d;
+  &::before,
+  &::after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background: #bbbbbb;
+    margin: 0 10px;
+  }
+}
+
+.block-sub-title {
+  color: #562c2c;
+  margin-top: 30px;
+}
+
+.title-block-3 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #f2542d;
+}
+
+.show-more-block-3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.section-1 {
+  .row {
+    .col-md-4:nth-child(odd) {
+      .card {
+        margin-top: 45px;
+      }
+    }
+  }
+}
+
+.section-2 {
+  background-image: url("../../../assets/bg_block2.png");
+  background-color: #fff6f4;
+
+  .block-title {
+    span {
+      background: #fff6f4;
+      padding: 0 10px;
+    }
+  }
+
+  .block {
+    &-activity {
+      font-weight: 500;
+      border: 1px solid #f2542d;
+      border-radius: 33px;
+      background: #fafafa;
+      color: #562c2c;
+      padding: 8px 20px;
+    }
+  }
+
+  .activity-map {
+    background-image: url("../../../assets/activity_map.png");
+    background-size: cover;
+    height: 698px;
+  }
+}
+
+.section-3 {
+  .card-subtitle {
+    color: #222222;
+  }
+  .card-text {
+    color: rgba(86, 44, 44, 0.8);
+    border-left: 1px solid #bbbbbb;
+    padding-left: 8px;
+  }
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,68 @@
+<div class="header">
+  <div class="header-navbar">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-logo" href="#">LOGO SAMPLE</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTarget"
+            aria-controls="navbarTarget" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+              <img src="assets/icon_menu.svg" alt="">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTarget">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" *ngFor="let item of menus">
+                <a class="nav-link" aria-current="page" href="#">{{item}}</a>
+              </li>
+            </ul>
+            <div class="flex flex-wrap">
+              <span class="cursor-pointer mx-2">
+                <img src="assets/icon_mountain.png" alt="">
+              </span>
+              <span class="cursor-pointer mx-2">
+                <img src="assets/icon_fish.png" alt="">
+              </span>
+              <span class="cursor-pointer mx-2">
+                <img src="assets/icon_crosshair.png" alt="">
+              </span>
+              <span class="cursor-pointer mx-2 btn-redirect">
+                <img src="assets/icon_arrow-up-right.png" alt="">
+              </span>
+            </div>
+            <div class="ml-auto">
+              <span class="select-language" [class.active]="currentLanguage === 'en'"
+                (click)="changeLanguage('en')">
+                EN
+              </span>
+              <span class="select-language" [class.active]="currentLanguage === 'fr'"
+                (click)="changeLanguage('fr')">
+                FR
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="actions-box w-100">
+    <div class="action-content">
+      <div class="mx-2 action-icon text-center">
+        <img src="assets/icon_mountain.svg" alt="">
+      </div>
+      <div class="mx-2 action-icon text-center">
+        <img src="assets/icon_fish.svg" alt="">
+        <div class="action-note mt-2">Activité 2</div>
+      </div>
+      <div class="mx-2 action-icon text-center">
+        <img src="assets/icon_crosshair.svg" alt="">
+        <div class="action-note mt-2">Activité 3</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="action-chat">
+    <img src="assets/icon_chat.png" alt="">
+  </div>
+</div>

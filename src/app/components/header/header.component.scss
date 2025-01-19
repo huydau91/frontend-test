@@ -1,0 +1,105 @@
+.header {
+  background-image: url("../../../assets/hero_banner_mb.png");
+  height: 812px;
+  &-navbar {
+    color: #fff;
+    background-color: rgba(86, 44, 44, 0.7);
+  }
+
+  .navbar-logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-weight: 500;
+  }
+}
+
+.btn-redirect {
+  background-color: #f2542d;
+  padding: 4px 20px;
+  border-radius: 33px;
+}
+
+.actions-box {
+  position: absolute;
+  top: 680px;
+}
+
+.action {
+  &-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &-note {
+    display: none;
+    color: #fff;
+  }
+
+  &-icon {
+    cursor: pointer;
+  }
+
+  &-chat {
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.select-language {
+  cursor: pointer;
+  padding: 0 5px;
+  &.active {
+    color: #f2542d;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 500px) {
+  .action {
+    &-note {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 1080px) {
+  .header {
+    height: 1080px;
+    background-image: url("../../../assets/hero_banner.png");
+  }
+  .actions-box {
+    position: absolute;
+    top: 900px;
+  }
+  .navbar-nav {
+    li:nth-child(1) {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+    li:nth-child(2) {
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+    li:nth-child(3) {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+  }
+
+  .action-icon {
+    width: 360px;
+  }
+}
